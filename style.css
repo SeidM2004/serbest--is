@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.small-container{
+    width: 95%;
+    margin: auto;
+}
+.portfolio .portfolio-container{
+    display: flex;
+}
+.portfolio .portfolio-left{
+    width: 300px;
+    background-color: #80461B;
+    height: 100vh;
+    padding: 150px 0px;
+}
+.portfolio .portfolio-left .portfolio-img{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8rem;
+    border: 5px solid #ffffff6d;
+}
+.portfolio .portfolio-left .portfolio-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.portfolio .portfolio-left .portfolio-navbar ul{
+    list-style: none;
+    text-align: center;
+}
+.portfolio .portfolio-left .portfolio-navbar ul .active a{
+    color: #FFF;
+}
+.portfolio .portfolio-left .portfolio-navbar ul li{
+    margin: 20px 0px;
+}
+.portfolio .portfolio-left .portfolio-navbar ul li a{
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff6d;
+}
+.portfolio .portfolio-right{
+    width: 100%;
+    margin: auto;
+    margin-top: 150px;
+    position: relative;
+}
+.portfolio .portfolio-right::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+.portfolio .portfolio-right .portfolio-header h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.portfolio .portfolio-right .portfolio-header{
+    margin-bottom: 50px;
+}
+.portfolio .portfolio-right .portfolio-box{
+    margin-bottom: 30px;
+}
+.portfolio .portfolio-right .portfolio-box .portfolio-box-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 20px;
+}
+.portfolio .portfolio-right .portfolio-box .portfolio-box-head .portfolio-job h2,h3{
+    text-transform: uppercase;
+}
+.portfolio .portfolio-right .portfolio-box .portfolio-box-head .portfolio-job h3{
+    font-weight: 400;
+}
+.portfolio .portfolio-right .portfolio-box .portfolio-box-head .portfolio-work-date{
+    color: #ae6228;
+}
+.portfolio .portfolio-right .portfolio-box .portfolio-description{
+    width: 80%;
+}
